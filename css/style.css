@@ -1,0 +1,786 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(63, 64, 65, 0.238), rgba(74, 74, 74, 0.3)), url(../images/banner-img.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0, 100% 59%, 50% 100%, 0 59%, 0 0);
+    position: relative;
+}
+
+.navbar {
+    background-color: black;
+}
+/* #navbar2{
+    background-color: #FF5722 !important;
+}
+#navbar2c{
+    text-color:white !important;
+} */
+
+.nav-item a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
+    background: linear-gradient(90deg, rgba(46, 45, 45, 1) 21%, rgba(102, 105, 99, 1) 63%, rgba(137, 142, 143, 1) 100%);
+}
+
+.header-buttons a {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 10px 50px;
+    padding: 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.4rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header-buttons a:hover {
+    color: #FF5722;
+    background-color: white;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(44, 62, 80, 0.3);
+}
+
+.header-section {
+    padding: 250px 0 0 60px;
+}
+
+/* Second header sections */
+.second-header {
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.extra-div {
+    background-color: white;
+    border: medium none;
+    padding: 30px !important;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.extra-div h2 {
+    font-size: 1rem;
+    line-height: 1.1;
+    word-spacing: 4px;
+    font-weight: bold;
+    margin: 20px 0 15px;
+    color: #FF5722;
+}
+
+.extra-div:hover {
+    transform: translate(-20px);
+    box-shadow: 0 0 20px 0 rgba(44, 62, 80, 0.3);
+}
+
+.about_section_2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.col-md-6 {
+    display: flex;
+    align-items: center;
+
+    /* Vertically center */
+    justify-content: center;
+    /* Horizontally center */
+}
+
+.image_iman {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-primary {
+    background-color: #FF5722;
+    /* Initial button color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #d35400;
+    /* Slightly darker shade for hover */
+}
+
+/* Search section  */
+.search_section {
+    background-color: #333;
+    /* Dark background color */
+    color: white;
+    padding: 50px 0;
+}
+
+.search_taital {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search_text {
+    color: #d3d3d3;
+    /* Light gray color for the text */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.select_box_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    /* Space between the select boxes and button */
+}
+
+.select-outline select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #d3d3d3;
+    /* Light gray border */
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.select-outline select:focus {
+    border-color: #FF5722;
+    /* Orange border on focus */
+    background-color: white;
+    /* White background on focus */
+}
+
+.search_btn a {
+    display: block;
+    background-color: #FF5722;
+    /* Button color */
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.search_btn a:hover {
+    background-color: #d35400;
+    /* Darker shade for hover */
+}
+
+/* pricing section */
+.pricing {
+    width: 100%;
+    padding: 50px;
+    position: relative;
+    background-color: #f0f0f0;
+    /* Light Grey */
+}
+
+.money {
+    font-size: 40px;
+    line-height: 1;
+    color: #2c3e50;
+    /* Dark Blue */
+}
+
+.card-body {
+    list-style-type: none;
+    margin: 10px 0;
+    font-weight: 400;
+    color: #2c3e50;
+    /* Dark Blue */
+}
+
+.card {
+    transition: 0.4s ease;
+}
+
+.card-footer {
+    background-color: white !important;
+    padding: 50px 0 !important;
+}
+
+.card-footer a {
+    border: 1px solid white;
+    border-radius: 100px;
+    margin: 10px 50px;
+    padding: 10px;
+    color: #2c3e50;
+    /* Dark Blue */
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.4rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.card-footer a:hover {
+    color: #fff;
+    background-color: #FF5722;
+    /* Orange */
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(44, 62, 80, 0.3);
+}
+
+.card:hover {
+    transform: translate(-20px);
+    box-shadow: 0 0 20px 0 rgba(44, 62, 80, 0.3);
+}
+
+.card:hover .card-header,
+.card:hover .money {
+    color: #FF5722;
+    /* Orange */
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    /* Optional: to add a border below the image */
+}
+
+.card-footer a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card-footer a:hover {
+    background-color: #d35400;
+}
+
+/* contact us css */
+::placeholder {
+    font-size: 0.7em;
+}
+
+.contactus {
+    width: 100%;
+    height: 80vh;
+    padding: 20px 0;
+    position: relative;
+}
+
+.contactus:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(330deg, #2c3e50 55%, #FF5722 0);
+    /* Blue to Orange gradient */
+}
+
+form:hover .mybtn button {
+    background-color: #2c3e50;
+    color: #fff;
+    box-shadow: 0 0 20px 0 rgba(44, 62, 80, 0.3);
+}
+
+/* Offer Section CSS */
+.why-choose-us {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.why-choose-us .section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.why-choose-us .feature-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.why-choose-us .feature-box i {
+    font-size: 3em;
+    color: #fe5b29;
+    margin-bottom: 20px;
+}
+
+.why-choose-us .feature-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.why-choose-us .feature-box p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* testimonials section */
+body {
+    padding-top: 70px;
+    /* Adjust this value to the height of your header */
+}
+
+.testimonials {
+    padding: 100px 0;
+    /* Adjust padding as necessary */
+    text-align: center;
+    background-color: #f9f9f9;
+    /* Optional: Add background color to differentiate section */
+}
+
+.testimonials .section-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.testimonial-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.testimonial-card img {
+    border-radius: 70%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+
+.testimonial-card .card-body {
+    padding-top: 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.controls .prev-btn,
+.controls .next-btn {
+    background-color: #fe5b29;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.controls .prev-btn:hover,
+.controls .next-btn:hover {
+    background-color: #d24b1c;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer Section */
+.footersection {
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px;
+    position: relative;
+    background-color: #2c3e50;
+    /* Dark Blue */
+}
+
+.footersection p {
+    color: #fff;
+}
+
+.footersection li {
+    list-style: none;
+}
+
+.footersection li a {
+    color: #fff;
+    font-size: 0.9em;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.footersection h3 {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.social-link {
+    margin-top: 10px;
+}
+
+.social-link a:hover {
+    text-decoration: none;
+}
+
+.social-link a i:hover {
+    color: #fff;
+}
+
+.social-link .fa-facebook {
+    color: #2c3e50;
+    /* Dark Blue */
+    padding-right: 15px;
+}
+
+.social-link .fa-youtube {
+    color: #FF5722;
+    /* Orange */
+    padding-right: 15px;
+}
+
+.social-link .fa-linkedin {
+    color: #2c3e50;
+    /* Dark Blue */
+    padding-right: 15px;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav .nav-item {
+    text-align: center;
+}
+
+.navbar-nav .nav-item:first-child {
+    flex: 1;
+    text-align: left;
+    margin-left: 10%;
+    /* Adjust this value to position it closer to the center */
+}
+
+.navbar-nav .nav-item:nth-child(2) {
+    flex: 1;
+    text-align: center;
+    /* Center the second item */
+}
+
+.navbar-nav .nav-item:last-child {
+    flex: 1;
+    text-align: right;
+    margin-right: 10%;
+    /* Adjust this value to position it closer to the center */
+}
+
+
+.extra-div:hover {
+    transform: translate(-20px);
+    box-shadow: 0 0 20px 0 rgba(44, 62, 80, 0.3);
+}
+
+/* pricing section */
+.pricing {
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+    background-color: #f0f0f0;
+    /* Light Grey */
+}
+
+.money {
+    font-size: 40px;
+    line-height: 1;
+    color: #2c3e50;
+    /* Dark Blue */
+}
+
+.card-body {
+    list-style-type: none;
+    margin: 10px 0;
+    font-weight: 400;
+    color: #2c3e50;
+    /* Dark Blue */
+}
+
+.card {
+    transition: 0.4s ease;
+}
+
+.card-footer {
+    background-color: white !important;
+    padding: 50px 0 !important;
+}
+
+.card-footer a {
+    border: 1px solid white;
+    border-radius: 100px;
+    margin: 10px 50px;
+    padding: 10px;
+    color: #2c3e50;
+    /* Dark Blue */
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.4rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.card-footer a:hover {
+    color: #fff;
+    background-color: #FF5722;
+    /* Orange */
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(44, 62, 80, 0.3);
+}
+
+.card:hover {
+    transform: translate(-20px);
+    box-shadow: 0 0 20px 0 rgba(44, 62, 80, 0.3);
+}
+
+.card:hover .card-header,
+.card:hover .money {
+    color: #FF5722;
+    /* Orange */
+}
+
+/* contact us css */
+::placeholder {
+    font-size: 1em;
+    text-align: center;
+}
+
+.contactus {
+    width: 100%;
+    height: 80vh;
+    padding: 20px 0;
+    position: relative;
+}
+
+.contactus:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(330deg, #FF5722 55%, #FF5722 0);
+    /* Blue to Orange gradient */
+}
+
+form:hover .mybtn button {
+    background-color: #FF5722 !important;
+    color: #fff;
+    box-shadow: 0 0 20px 0 #FF5722 !important;
+}
+
+/* Offer Section CSS */
+.offers {
+    background-color: #f0f0f0;
+    /* Light Grey */
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.headings {
+    margin-bottom: 50px;
+}
+
+.headings h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2c3e50;
+    /* Dark Blue */
+}
+
+.names h2 {
+    color: #2c3e50;
+    /* Dark Blue */
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.servicediv {
+    font-size: 1.5em;
+}
+
+.service-icons {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+i {
+    color: #FF5722;
+    /* Orange */
+}
+
+.progress {
+    height: 0.7rem !important;
+    background-color: #FF5722;
+    /* Orange */
+}
+
+/* Footer Section */
+.footer_section {
+    background-color: #333;
+    /* Light grey background color */
+    padding: 40px 0;
+}
+
+.footer_logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    /* Center the logo and add space below */
+}
+
+.footer_taital {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    /* Makes the title uppercase */
+    color: #f0eeee;
+    /* Dark grey for titles */
+}
+
+.footer_text,
+.lorem_text {
+    color: #f9f4f4;
+    /* Medium grey for text */
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.update_mail {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    resize: none;
+    /* Prevents resizing of the textarea */
+}
+
+.subscribe_bt a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    /* Button color */
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.subscribe_bt a:hover {
+    background-color: #e64a19;
+    /* Darker button color on hover */
+}
+
+.location_text {
+    margin-bottom: 10px;
+}
+
+.location_text a {
+    color: #edeaea;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.location_text a:hover {
+    color: #ff5722;
+    /* Highlight color on hover */
+}
+
+.social_icon ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+}
+
+.social_icon ul li {
+    margin-right: 10px;
+}
+
+.social_icon ul li a {
+    color: #f5f2f2;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social_icon ul li a:hover {
+    color: #ff5722;
+    /* Highlight color on hover */
+}
+
+@media (min-width: 768px) {
+    .footer_section_2 .col {
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer_section_2 .col {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
